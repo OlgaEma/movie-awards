@@ -6,6 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome Nedjo<?php echo config('app.env') ?></h1>
+<ul>
+    @foreach ($movies as $movie)
+        <li>{{ $movie->name }}</li>
+    @endforeach
+</ul>
 </body>
 </html>

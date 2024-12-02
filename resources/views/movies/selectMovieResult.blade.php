@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome Nedjo<?php echo config('app.env') ?></h1>
+<ul>
+    <li>ID: {{ $result->id }}</li>
+    <li>Name: {{ $result->name }}</li>
+    <li>Year: {{ $result->year }}</li>
+    <li>Rating: {{ $result->rating }}</li>
+</ul>
 </body>
 </html>

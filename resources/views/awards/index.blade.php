@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome Nedjo<?php echo config('app.env') ?></h1>
+    <h1>Awards</h1>
+    <ol>
+        <?php foreach($awards as $award) : ?>
+            <li><?php echo $award ?></li>
+        <?php endforeach; ?>
+    </ol>
 </body>
 </html>

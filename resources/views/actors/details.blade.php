@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome Nedjo<?php echo config('app.env') ?></h1>
+    <h1>Actor details :</h1>
+    @foreach ($details as $detail)
+        <li>{{ $detail->fullname}},<br>name:{{$detail->name}}</li>
+    @endforeach
 </body>
 </html>
